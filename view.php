@@ -2,13 +2,19 @@
 <html lang="en">
 
 <head>
-  
+
+
+ 
+
+
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>User Dashboard</title>
+  <title>User Dashboard - Case Details</title>
+
   <link rel = "icon" href = "icon.png" 
-          type = "image/x-icon">
+  type = "image/x-icon">
+
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -22,17 +28,16 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  
 
 </head>
 
 <body>
 
+
   <!--HEADER-->
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-center">
 
-      <h1 class="logo"><a href="#"></a></h1>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -43,7 +48,7 @@
           <li><a class="nav-link scrollto active" href="DILG Intranet.html">DILG Intranet</a></li>
           <li class="dropdown"><a href="#"><span>About Us</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-                <li><a href="Mission, Vision, and Shared Values.html">Mission, Vision, and Shared Values</a></li>
+              <li><a href="Mission, Vision, and Shared Values.html">Mission, Vision, and Shared Values</a></li>
             </ul>
           </li>
           <li class="dropdown"><a href="#"><span>Account</span> <i class="bi bi-chevron-down"></i></a>
@@ -53,101 +58,72 @@
             </ul>
           </li>
         </ul>
-        
         <i class="bi bi-list mobile-nav-toggle"></i>
-        
       </nav>
     </div>
-    
   </header>
+
 
   <main id="main">
 
+    <!--ACCOUNTS-->
     <section id="services" class="services">
-    <div class="container">
+      <div class="container">
 
-    <div class="section-title">
-    <h2>User Dashboard</h2>
-    </div>
-
-    <div class="form-outline">
-      <h4><input type="search" id="form1" class="form-control" placeholder="Search" aria-label="Search" /></h4>
-    </div>  
-
-    <br>
-
-   
-
-    <div class="row">
-      <div class="col-xl-3">
-        <div class="icon-box">
-          <a href="#"><div class="icon"><i class="bi bi-card-list"></i></div></a>
-          <h4><a href="#">Lupon Masterlist</a></h4>
-          <p class="font-weight-normal">View Details ></p>
+        <div class="section-title">
+          <h2>Details</h2>
         </div>
-      </div>
-    
-      <div class="col-xl-3">
-        <div class="icon-box">
-          <a href="Calendar.html"><div class="icon"><i class="bi bi-calendar4-week"></i></div></a>
-          <h4><a href="Calendar.html">Calendar Schedule</a></h4>
-          <p class="font-weight-normal">View Details ></p>
-        </div>
-      </div>
-    
-      <div class="col-xl-3">
-        <div class="icon-box">
-          <a href="#"><div class="icon"><i class="bi bi-person-lines-fill"></i></div></a>
-          <h4><a href="#">User Logs</a></h4>
-          <p class="font-weight-normal">View Details ></p>
-        </div>
-      </div>
-    
-      <div class="col-xl-3">
-        <div class="icon-box">
-          <a href="#"><div class="icon"><i class="bi bi-file-earmark-break"></i></div></a>
-          <h4><a href="#">Generate Reports</a></h4>
-          <p class="font-weight-normal">View Details ></p>
-        </div>
-      </div>
-    </div>
 
-    <br>
+        <div class="row">
+            <div class="col-5 mx-auto">
+                <div class="icon-box">
 
-    <div class="row">
-      <div class="col-xl-3">
-        <div class="icon-box">
-          <a href="Case Files.html"><div class="icon"><i class="bi bi-briefcase"></i></div></a>
-          <h4><a href="Case Files.html">Case Files</a></h4>
-          <p class="font-weight-normal">View Details ></p>
-        </div>
-      </div>
-    
-      <div class="col-xl-3">
-        <div class="icon-box">
-          <a href="archives.php"><div class="icon"><i class="bi bi-file-earmark-zip-fill"></i></div></a>
-          <h4><a href="archives.php">Archives</a></h4>
-          <p class="font-weight-normal">View Details ></p>
-        </div>
-      </div>
-    
-      <div class="col-xl-3">
-        <div class="icon-box">
-          <a href="Manage Users.html"><div class="icon"><i class="bi bi-person-gear"></i></div></a>
-          <h4><a href="Manage Users.html">Manage Users</a></h4>
-          <p class="font-weight-normal">View Details ></p>
-        </div>
-      </div>
-    
-     
-
-
-     
+                   <div class="form-container">
+  <h4><a>Case Description</a></h4>
+<br>
+  <div class="form-content">
+    <div class="form-group">
+      <label for="complainant-name">Complainant Name:</label>
+      <span>John Doe</span>
+    </div><br>
+    <div class="form-group">
+      <label for="complainant-address">Complainant Address:</label>
+      <span>123 Main Street, City, State</span>
+    </div><br>
+    <div class="form-group">
+      <label for="complainant-contact">Complainant Contact No.:</label>
+      <span>123-456-7890</span>
+    </div><br>
+    <div class="form-group">
+      <label for="respondent-name">Respondent Name:</label>
+      <span>Jane Smith</span>
+    </div><br>
+    <div class="form-group">
+      <label for="respondent-address">Respondent Address:</label>
+      <span>456 Elm Street, City, State</span>
+    </div><br>
+    <div class="form-group">
+      <label for="respondent-contact">Respondent Contact No.:</label>
+      <span>987-654-3210</span>
+    </div><br>
+    <div class="form-group">
+      <label for="complaint-category">Nature/Category of Complaint:</label>
+      <span>Product Defect</span>
+    </div><br>
+    <div class="form-group">
+      <label for="incident-date">Date and Time of Incident:</label>
+      <span>2023-07-14 15:30</span>
+    </div><br>
+    <div class="form-group">
+      <label for="incident-location">Location of Incident:</label>
+      <span>City Park, XYZ Street</span>
+    </div><br>
+  </div>
+</div>
 
         
 
   </main>
-
 
  
 
