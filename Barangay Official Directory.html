@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Barangay Official Directory</title>
+  <link rel = "icon" href = "icon.png" 
+          type = "image/x-icon">
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  
+
+</head>
+
+<body>
+
+  <!--HEADER-->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-center">
+
+      <h1 class="logo"><a href="#"></a></h1>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link" href="Home.html">Home</a></li>
+          <li><a class="nav-link scrollto active" href="Barangay Official Directory.html">Barangay Official Directory</a></li>
+          <li><a class="nav-link" href="#team">Organizational Structure</a></li>
+          <li><a class="nav-link" href="#portfolio">LGU Code</a></li>
+          <li><a class="nav-link" href="DILG Intranet.html">DILG Intranet</a></li>
+          <li class="dropdown"><a href="#"><span>About Us</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+                <li><a href="Mission, Vision, and Shared Values.html">Mission, Vision, and Shared Values</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+
+
+    <section id="services" class="services">
+    <div class="container">
+
+    <div class="section-title">
+    <h2>Barangay Official Directory</h2>
+    </div>
+
+    <div class="row">
+        <div class="col-5 mx-auto">
+          <div class="icon-box">
+            <img src="logo.png" class="rounded mx-auto d-block" alt="...">
+            <br>
+            <h4><a>Barangay Official Directory</a></h4>
+
+<br>
+
+    <div class="myForm col-10 mx-auto">
+
+        <form id="myForm" action="#" method="post">
+            <div class="form-group">
+                <select class="form-control" id="municipality" name="municipality">
+                    <option value="Municipality A">Municipality A</option>
+                    <option value="Municipality B">Municipality B</option>
+                    <option value="Municipality C">Municipality C</option>
+                    <!-- Add more municipalities as needed -->
+                </select>
+            </div><br>
+
+            <div class="form-group">
+                <select class="form-control" id="barangay" name="barangay">
+                    <option value="Barangay X">Barangay X</option>
+                    <option value="Barangay Y">Barangay Y</option>
+                    <option value="Barangay Z">Barangay Z</option>
+                    <!-- Add more barangays as needed -->
+                </select>
+            </div><br><br>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form><br>
+
+        <div id="output"></div><br>
+
+        <div id="resetBtn">
+            <button class="btn btn-secondary" onclick="resetForm()">Reset</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#myForm').submit(function(event) {
+                event.preventDefault(); // Prevent form submission
+
+                // Get the selected values
+                var municipality = $('#municipality').val();
+                var barangay = $('#barangay').val();
+
+                // Perform any necessary processing here to get the corresponding officials based on the selected municipality and barangay
+
+                // Example officials for demonstration purposes
+                var barangayChairman = "Barangay Chairman ABC";
+                var barangaySecretary = "Barangay Secretary DEF";
+                var barangayCouncilor = "Barangay Councilor GHI";
+                var skChairman = "SK Chairman JKL";
+                var contactNumber = "123-456-7890";
+                var email = "example@example.com";
+
+                // Display the output
+                var output = "<div class='output-line'><strong>Municipality:</strong> " + municipality + "</div>";
+                output += "<div class='output-line'><strong>Barangay:</strong> " + barangay + "</div>";
+                output += "<div class='output-line'><strong>Barangay Chairman:</strong> " + barangayChairman + "</div>";
+                output += "<div class='output-line'><strong>Barangay Secretary:</strong> " + barangaySecretary + "</div>";
+                output += "<div class='output-line'><strong>Barangay Councilor:</strong> " + barangayCouncilor + "</div>";
+                output += "<div class='output-line'><strong>SK Chairman:</strong> " + skChairman + "</div>";
+                output += "<div class='output-line'><strong>Contact Number:</strong> " + contactNumber + "</div>";
+                output += "<div class='output-line'><strong>Email:</strong> " + email + "</div>";
+
+                $('#output').html(output);
+            });
+        });
+
+        function resetForm() {
+            $('#myForm')[0].reset();
+            $('#output').html('');
+        }
+    </script>
+
+
+  <!--JS FILES-->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!--MAIN JS FILE-->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
